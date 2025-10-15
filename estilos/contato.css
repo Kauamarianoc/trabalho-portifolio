@@ -13,8 +13,10 @@ header {
 }
 
 header>a {
-    margin: 10px;
+    width: 10vh;
+    margin: 1vh;
     border-radius: 20px;
+    text-align: center;
     text-decoration: none;
     color: #e5e6e7;
 }
@@ -37,12 +39,21 @@ main {
 main>section {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     background-image: linear-gradient(to right bottom, #4f5a74, #80889b);
     border-radius: 40px;
     box-shadow: 2.5px 2.5px 5px rgba(0, 0, 0, 0.408);
-    width: 450px;
+    width: 60vh;
     height: 80vh;
+    margin: auto;
+}
+
+#titulo {
+    color: #e5e6e7;
+    text-shadow: 1px 1px 1px #e5e6e75e;
+    font-size: 8vh;
+    margin: 3vh;
 }
 
 main>section>form {
@@ -51,36 +62,36 @@ main>section>form {
     align-items: center;
     background-color: #e5e6e7;
     border-radius: 20px;
-    width: 370px;
-    height: 430px;
+    width: 50vh;
+    height: 60vh;
 }
 
 main>section>form>label {
     text-align: left;
-    width: 290px;
-    height: 20px;
-    margin-top: 30px;
+    width: 40vh;
+    height: 3vh;
+    margin-top: 5vh;
 }
 
 main>section>form>input {
     border: none;
     border-radius: 20px;
-    width: 330px;
-    height: 45px;
+    width: 45vh;
+    height: 6vh;
     text-align: center;
 }
 
 main>section>form>textarea {
     border: none;
     border-radius: 20px;
-    width: 330px;
-    height: 80px;
+    width: 45vh;
+    height: 10vh;
     text-align: center;
 }
 
 main>section>form>button {
-    width: 70px;
-    height: 30px;
+    width: 8vh;
+    height: 4vh;
     border: none;
     border-radius: 20px;
     margin: 40px;
@@ -90,13 +101,6 @@ button:hover {
     background-color: #4f5a74;
     color: #e5e6e7;
     transition: 0.2s;
-}
-
-#titulo {
-    color: #e5e6e7;
-    text-shadow: 1px 1px 1px #e5e6e75e;
-    font-size: 55px;
-    margin: 30px;
 }
 
 footer {
