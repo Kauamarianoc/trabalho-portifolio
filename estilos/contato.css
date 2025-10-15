@@ -67,6 +67,7 @@ main>section>form>input {
     border-radius: 20px;
     width: 330px;
     height: 45px;
+    text-align: center;
 }
 
 main>section>form>textarea {
@@ -74,6 +75,7 @@ main>section>form>textarea {
     border-radius: 20px;
     width: 330px;
     height: 80px;
+    text-align: center;
 }
 
 main>section>form>button {
