@@ -1,5 +1,4 @@
 :root {
-    /* Define o tamanho base da fonte para calcular 'rem' */
     font-size: 16px;
 }
 
@@ -7,7 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -16,21 +15,19 @@ body {
     flex-direction: column;
 }
 
-/* --- Header (Cabeçalho) --- */
+/* Cabeçalho */
 header {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #4f5a74;
     height: 3rem;
-    /* Tamanho em rem */
     width: 100%;
     padding: 0.5rem;
     flex-wrap: wrap;
 }
 
 header>a {
-    /* Ajustado de 10vh/1vh para rem/padding */
     padding: 0.25rem 0.5rem;
     margin: 0 0.5rem;
     border-radius: 20px;
@@ -46,11 +43,10 @@ header>a:hover {
     transition: 0.2s;
 }
 
-/* --- Main (Conteúdo Principal) --- */
+/* Conteúdo Principal */
 main {
     display: flex;
     justify-content: flex-start;
-    /* Alinha o conteúdo (Título e Seção) ao topo */
     align-items: center;
     flex-direction: column;
     background-color: #e5e6e7;
@@ -62,13 +58,10 @@ main {
 main>h1 {
     color: #4f5259;
     font-size: 2.5rem;
-    /* Fonte em rem */
     margin-bottom: 2rem;
-    /* Margem em rem */
     text-align: center;
 }
 
-/* --- Section (Grade de Projetos) --- */
 section {
     background-image: linear-gradient(to right, #4f5a74, #80889b);
     box-shadow: 2.5px 2.5px 5px rgba(0, 0, 0, 0.408);
@@ -76,17 +69,12 @@ section {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    /* Usando wrap normal, flex-flow: wrap-reverse inverte a ordem */
     width: 95%;
-    /* Largura relativa */
     max-width: 650px;
-    /* Limite em telas grandes */
     height: auto;
-    /* Altura definida pelo conteúdo */
     border-radius: 20px;
     padding: 1rem;
     gap: 1.5rem;
-    /* Espaço entre os itens */
 }
 
 section>div {
@@ -94,22 +82,14 @@ section>div {
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    /* Centraliza verticalmente o conteúdo da div */
     background-color: #e5e6e7;
     border-radius: 20px;
     width: 45%;
-    /* Ocupa metade da largura da section (menos o gap) */
     min-width: 250px;
-    /* Garante que não fique muito estreito */
     height: 10rem;
-    /* Altura fixa em rem */
     padding: 1rem;
     flex-grow: 1;
-    /* Permite que cresça ligeiramente se houver espaço */
 }
-
-/* Se houver apenas 3 ou 4 projetos, eles ocuparão 50% cada. 
-           Se houver menos de 2, ele ocupará 100% da linha devido ao min-width. */
 
 section>div>h1 {
     color: #4f5259;
@@ -120,7 +100,6 @@ section>div>h1 {
 
 section>div>a {
     margin: 0;
-    /* Removida a margin 50px */
     color: #4f5a74;
     font-weight: bold;
     text-decoration: none;
@@ -130,25 +109,23 @@ section>div>a:hover {
     text-decoration: underline;
 }
 
-/* --- Footer (Rodapé) --- */
+/* Rodapé */
 footer {
-    background-color: #4f5259;
+    background-color: #4f5a74;
     color: #e5e6e7;
     text-align: center;
     width: 100%;
     height: 2rem;
-    /* Altura em rem */
     line-height: 2rem;
     flex-shrink: 0;
 }
 
-/* --- Media Query para Celulares (Telas até 550px) --- */
-@media (max-width: 550px) {
+/* --- Media Query para Celulares --- */
+@media (max-width: 600px) {
 
     header {
         height: auto;
         flex-direction: column;
-        /* Links um abaixo do outro */
         padding: 1rem 0.5rem;
     }
 
@@ -167,7 +144,6 @@ footer {
         gap: 0.75rem;
     }
 
-    /* Cada projeto ocupa 100% da largura no celular, empilhando */
     section>div {
         width: 100%;
         min-width: 0;

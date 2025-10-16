@@ -1,5 +1,4 @@
 :root {
-    /* Define o tamanho base da fonte para calcular 'rem' */
     font-size: 16px;
 }
 
@@ -7,7 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -23,17 +22,14 @@ header {
     align-items: center;
     background-color: #4f5a74;
     height: 3rem;
-    /* Usando rem ao invés de 5vh */
     width: 100%;
     padding: 0.5rem;
     flex-wrap: wrap;
-    /* Permite que os links quebrem a linha */
 }
 
 header>a {
-    /* Ajustado de 10vh/1vh para rem */
-    margin: 0 0.5rem;
     padding: 0.25rem 0.5rem;
+    margin: 0 0.5rem;
     border-radius: 20px;
     text-align: center;
     text-decoration: none;
@@ -55,7 +51,6 @@ main {
     background-color: #e5e6e7;
     width: 100%;
     flex-grow: 1;
-    /* Ocupa o espaço restante */
     padding: 1rem;
 }
 
@@ -65,11 +60,8 @@ main>section {
     align-items: center;
     justify-content: center;
     width: 90%;
-    /* Largura relativa */
     max-width: 500px;
-    /* Limite em telas grandes */
     height: auto;
-    /* Altura definida pelo conteúdo */
     padding: 1rem 0;
 }
 
@@ -81,20 +73,14 @@ main>section>div {
     background-image: linear-gradient(to right, #4f5a74, #80889b);
     box-shadow: 2.5px 2.5px 5px rgba(0, 0, 0, 0.408);
     width: 100%;
-    /* Ocupa 100% da seção */
     height: 6rem;
-    /* Altura fixa em rem */
     margin: 0.75rem 0;
-    /* Margem em rem */
 }
 
 main>section>div>a {
     width: 80%;
-    /* Largura relativa para o link */
     max-width: 350px;
-    /* Limite de largura para o link */
     font-size: 1.5rem;
-    /* Fonte em rem */
     text-decoration: none;
     text-align: center;
     border: 2.5px solid #e5e6e7;
@@ -102,7 +88,6 @@ main>section>div>a {
     color: #e5e6e7;
     box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.318);
     padding: 0.75rem;
-    /* Padding em rem */
 }
 
 main>section>div>a:hover {
@@ -112,46 +97,40 @@ main>section>div>a:hover {
     transition: 0.3s;
 }
 
-/* --- Footer (Rodapé) --- */
+/* Rodapé */
 footer {
-    background-color: #4f5259;
+    background-color: #4f5a74;
     color: #e5e6e7;
     text-align: center;
     width: 100%;
     height: 2rem;
-    /* Altura em rem */
     line-height: 2rem;
     flex-shrink: 0;
 }
 
-/* --- Media Query para Celulares (Telas até 600px) --- */
+/* --- Media Query para Celulares --- */
 @media (max-width: 600px) {
     header {
         height: auto;
         flex-direction: column;
-        /* Links um abaixo do outro */
         padding: 1rem 0.5rem;
     }
 
     header>a {
         width: 100%;
-        /* Ocupa toda a largura do header */
         margin: 0.25rem 0;
     }
 
     main>section {
         width: 100%;
-        /* Ocupa a largura máxima disponível no celular */
     }
 
     main>section>div {
         height: 5rem;
-        /* Altura um pouco menor para economizar espaço */
     }
 
     main>section>div>a {
         font-size: 1.2rem;
-        /* Fonte menor */
         padding: 0.5rem;
     }
 }

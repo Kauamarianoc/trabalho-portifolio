@@ -1,5 +1,4 @@
 :root {
-    /* Define o tamanho base da fonte para calcular 'rem' */
     font-size: 16px;
 }
 
@@ -7,34 +6,30 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* Adicionado font-family básico para melhor visualização */
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
+/*Estrutura Principal*/
 body {
     min-height: 100vh;
-    /* Garante que o body ocupa a altura mínima da viewport */
     display: flex;
     flex-direction: column;
-    /* Coloca o footer no final */
 }
 
-/* --- Header (Cabeçalho) --- */
+/* Cabeçalho */
 header {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #4f5a74;
     height: 3rem;
-    /* Tamanho fixo em rem */
     width: 100%;
     padding: 0.5rem;
     flex-wrap: wrap;
-    /* Permite que os links quebrem a linha se necessário */
 }
 
 header>a {
-    padding: 0.5rem 1rem;
+    padding: 0.25rem 0.5rem;
     margin: 0 0.5rem;
     border-radius: 20px;
     text-align: center;
@@ -49,7 +44,7 @@ header>a:hover {
     transition: 0.2s;
 }
 
-/* --- Main (Conteúdo Principal) --- */
+/* Conteúdo Principal */
 main {
     display: flex;
     justify-content: center;
@@ -57,24 +52,18 @@ main {
     background-color: #e5e6e7;
     width: 100%;
     flex-grow: 1;
-    /* Ocupa o espaço restante entre header e footer */
     padding: 2rem 1rem;
-    /* Padding para evitar que o conteúdo encoste nas bordas */
 }
 
 main>section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* Usando um padding interno para dar respiro, ao invés de margin externa */
     padding: 2rem;
-    border-radius: 20px;
+    border-radius: 40px;
     background-image: linear-gradient(to right bottom, #4f5a74, #80889b);
     width: 90%;
-    /* Ocupa 90% da largura do main */
-    max-width: 700px;
-    /* Limita a largura em telas grandes */
-    /* A altura será definida pelo conteúdo */
+    max-width: 600px;
 }
 
 main>section>div {
@@ -98,7 +87,6 @@ main>section>div {
 }
 
 main>section>div>h1 {
-    /* Removido o display: flex e flex-direction: column desnecessário aqui */
     margin-bottom: 0.5rem;
     font-size: 1.5rem;
     color: #4f5a74;
@@ -106,16 +94,14 @@ main>section>div>h1 {
 
 main>section>div>ul {
     list-style: inside disc;
-    /* Alinha os marcadores corretamente */
     padding-left: 0.5rem;
-    /* Pequeno padding para afastar da borda */
 }
 
 main>section>div>ul>li {
     margin: 0.25rem 0;
 }
 
-/* --- Footer (Rodapé) --- */
+/* Rodapé */
 footer {
     background-color: #4f5a74;
     color: #e5e6e7;
@@ -123,25 +109,20 @@ footer {
     width: 100%;
     height: 2rem;
     line-height: 2rem;
-    /* Centraliza o texto verticalmente */
     flex-shrink: 0;
-    /* Evita que o footer encolha */
 }
 
-/* --- Media Queries para Dispositivos Móveis (Telas até 600px) --- */
+/* --- Media Queries para Dispositivos Móveis --- */
 @media (max-width: 600px) {
 
     header {
         height: auto;
-        /* Altura automática */
         flex-direction: column;
-        /* Links em coluna */
         padding: 1rem 0.5rem;
     }
 
     header>a {
         width: 100%;
-        /* Links ocupam toda a largura */
         margin: 0.25rem 0;
         padding: 0.5rem 0;
     }
@@ -152,7 +133,6 @@ footer {
 
     main>section {
         width: 100%;
-        /* Ocupa toda a largura da tela no celular */
         max-width: none;
         padding: 1rem;
     }
