@@ -184,3 +184,20 @@ footer {
         margin-top: 1.5rem;
     }
 }
+
+.erro {
+    background-color: #ffcccc; 
+    color: #cc0000;          
+}
+
+.sucesso {
+    background-color: #e5e6e7;
+    color: #4f5a74;
+    border-radius: 5px;
+    margin: 5px;
+    box-shadow: 1px 1px 1px #80889b;
+}
+
+#mensagemFeedback {
+    display: none; 
+}

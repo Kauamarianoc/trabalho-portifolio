@@ -51,6 +51,16 @@ function enviarFormulario(event) {
     // Verifica se todos os campos estão preenchidos
     if (verificarCamposPreenchidos()) {
 
+        setTimeout(() => {
+
+            // Limpa todos os campos
+            limparCampos();
+
+            // Exibe mensagem de sucesso
+            exibirMensagem('Mensagem enviada com sucesso! Em breve entrarei em contato.', 'sucesso');
+
+        }, 500); // 0.5 segundo de "processamento"
+
     } else {
         // Exibe mensagem de erro se algo estiver faltando
         exibirMensagem('Por favor, preencha todos os campos obrigatórios.', 'erro');
