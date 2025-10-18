@@ -103,7 +103,6 @@ main>section>form>textarea {
     /* Adiciona uma borda leve para visibilidade */
     border-radius: 10px;
     width: 100%;
-    /* Ocupa 100% da largura do form */
     padding: 0.75rem;
     margin-top: 0.5rem;
     text-align: left;

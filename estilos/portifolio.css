@@ -39,7 +39,7 @@ header>a {
 
 header>a:hover {
     background-color: #e5e6e7;
-    color: #4f5259;
+    color: #4f5a74;
     transition: 0.2s;
 }
 
@@ -56,7 +56,7 @@ main {
 }
 
 main>h1 {
-    color: #4f5259;
+    color: #4f5a74;
     font-size: 2.5rem;
     margin-bottom: 2rem;
     text-align: center;
@@ -86,7 +86,7 @@ section>div {
     border-radius: 20px;
     width: 45%;
     min-width: 250px;
-    height: 10rem;
+    height: 12.5rem;
     padding: 1rem;
     flex-grow: 1;
 }
