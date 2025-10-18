@@ -83,6 +83,7 @@ section>div {
     flex-direction: column;
     justify-content: center;
     background-color: #e5e6e7;
+    box-shadow: 1px 1px 2px #e5e6e7;
     border-radius: 20px;
     width: 45%;
     min-width: 250px;
@@ -94,12 +95,12 @@ section>div {
 div:hover {
     border: 2px solid rgba(255, 255, 255, 0.637);
     transform: translate(-3px, -3px);
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.623);
+    box-shadow: 5px 5px 10px rgba(237, 234, 234, 0.623);
     transition: transform .3s, border .5s;
 }
 
 section>div>h1 {
-    color: #4f5259;
+    color: #4f5a74;
     text-align: center;
     font-size: 1.3rem;
     margin-bottom: 1rem;

@@ -43,7 +43,7 @@ header>a:hover {
     transition: 0.2s;
 }
 
-/* --- Main (Conteúdo Principal) --- */
+/* Conteúdo Principal */
 main {
     display: flex;
     justify-content: center;

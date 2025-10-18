@@ -185,8 +185,8 @@ footer {
 }
 
 .erro {
-    background-color: #ffcccc; 
-    color: #cc0000;          
+    background-color: #ffcccc;
+    color: #cc0000;
 }
 
 .sucesso {
@@ -198,5 +198,5 @@ footer {
 }
 
 #mensagemFeedback {
-    display: none; 
+    display: none;
 }
