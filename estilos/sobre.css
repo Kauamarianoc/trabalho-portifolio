@@ -91,15 +91,15 @@ div:hover {
 section>div>h1 {
     text-align: center;
     font-family: sans-serif;
-    border-bottom: 1px solid #260120;
-    color: #4f5259;
+    border-bottom: 1px solid #80889b;
+    color: #4f5a74;
     font-size: 1.5rem;
     margin: 1.25rem 1rem;
     padding-bottom: 0.5rem;
 }
 
 section>div>p {
-    color: #4f5259;
+    color: #4f5a74;
     text-align: justify;
     margin: 1rem 1rem;
 }
